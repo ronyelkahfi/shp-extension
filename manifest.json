@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "Product Crawler",
+    "version": "1.0",
+    "description": "Tools untuk mengambil data product yang di tampilkan di browser.",
+    "permissions": ["activeTab", "storage"],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "icon.png"
+    },
+    "icons": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  }
+  
