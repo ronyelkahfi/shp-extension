@@ -1,6 +1,8 @@
 document.getElementById('myButton').addEventListener('click', () => {
-    var console = chrome.extension.getBackgroundPage().console;
-    console.log('foo');
+  chrome.tabs.query({active: true, currentWindow: true}, function (tabs) {
+    const activeTabId = tabs[0].id;
+    chrome.tabs.sendMessage(activeTabId, {"message": "This worked!"});
+});
 
   });
   
